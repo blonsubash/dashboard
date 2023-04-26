@@ -1,0 +1,246 @@
+.left-section {
+  position: sticky;
+  left: 0px;
+  .left-section__menu-items {
+    display: flex;
+    align-items: center;
+    margin-left: 160px;
+    margin-top: 4px;
+    height: 24px;
+    // border: 1px solid red;
+    width: 220px;
+    border-radius: 6px;
+    padding: 8px;
+    // background-color: green;
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(199, 197, 197, 0.245);
+    }
+  }
+  .left-section__menu-items1 {
+    display: flex;
+    align-items: center;
+    margin-left: 160px;
+    height: 24px;
+    // border: 1px solid red;
+    width: 220px;
+    border-radius: 6px;
+    padding: 8px;
+    background-color: rgba(40, 57, 67, 1);
+    color: white;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .left-section__menu-items-icons {
+    img {
+      width: 18px;
+      margin-left: 2px;
+    }
+  }
+
+  .left-section__menu-items-name {
+    font-weight: 600;
+    margin-left: 8px;
+    font-size: 14px;
+  }
+
+  .left-section__sub-menu-items {
+    margin-left: 170px;
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+.main-section {
+  width: 100%;
+  margin-right: 100px;
+  margin-left: 24px;
+
+  .main-section__goals-card {
+    background-color: white;
+    border-radius: 4px;
+
+    .goals-card__heading {
+      display: flex;
+      align-items: center;
+      // flex-direction: column;
+      padding: 10px;
+      width: 100%;
+
+      .goals-card__trophy {
+        color: #ffbb00;
+        width: 34px;
+        height: 34px;
+      }
+      h5 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 16px;
+        margin-left: 6px;
+        margin-top: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+    .goals-card__page-reach-info {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      p {
+        margin: 0;
+        font-weight: 500;
+        font-size: 14px;
+        margin-left: 6px;
+        margin-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      img {
+        margin-top: 10px;
+        margin-left: 4px;
+        width: 16px;
+        height: 16px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .goals-card__button {
+      margin-left: auto;
+      margin-right: 28px;
+      // margin-top: -10px;
+
+      button {
+        font-weight: 400;
+        height: 36px;
+        width: 92px;
+        color: rgba(28, 43, 51, 1);
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        border-radius: 4px;
+        background-color: rgba(235, 238, 241, 0.5);
+
+        &:hover {
+          background-color: rgba(222, 220, 220, 0.4);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .goals-card__body {
+      margin-left: 22px;
+      display: flex;
+      flex: 1;
+      margin-bottom: 14px;
+
+      .apex-charts {
+        width: 100% !important;
+      }
+
+      img {
+        // margin-left: 16px;
+        width: 440px;
+        height: 220px;
+        background-color: rgb(167, 167, 219);
+        border-radius: 6px;
+        margin-bottom: 26px;
+      }
+
+      .goals-card__body-right-section {
+        margin-left: 50px;
+        margin-top: 24px;
+        h5 {
+          margin: 0;
+          font-size: 18px;
+        }
+        p {
+          margin: 0;
+          font-weight: 400;
+          font-size: 0.875rem !important;
+          margin-right: 12px;
+        }
+        button {
+          margin-top: 12px;
+          height: 36px;
+          width: 105px;
+          color: white;
+          border: 1px solid rgba(10, 120, 190, 1);
+          border-radius: 4px;
+          background-color: rgba(10, 120, 190, 1);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .goals-card__body-result {
+      margin-left: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 14px;
+
+      .more-info-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(235, 238, 241, 0.5);
+        border-radius: 4px;
+        cursor: pointer;
+        height: 38px;
+        margin-bottom: 12px;
+        margin-right: 18px;
+        outline-color: rgba(203, 210, 217, 0.5);
+        margin-top: 8px;
+
+        &:hover {
+          background-color: rgba(222, 220, 220, 0.4);
+        }
+
+        .more-info-img {
+          width: 14px;
+          color: rgba(28, 43, 51, 1);
+        }
+        p {
+          margin: 0;
+          line-height: 1.4;
+          font-size: 0.875rem !important;
+          margin-left: 6px;
+          color: rgba(28, 43, 51, 1);
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .goals-card__image {
+    width: 340px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .goals-card__image {
+    width: 300px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .goals-card__image {
+    width: 270px !important;
+    height: 200px !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .goals-card__image {
+    width: 220px !important;
+    height: 150px !important;
+  }
+  .goals-card__body-right-section {
+    margin-right: 70px !important;
+    p {
+      display: none;
+    }
+  }
+}
